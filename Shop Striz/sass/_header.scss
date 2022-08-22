@@ -1,0 +1,143 @@
+.header {
+    background-color:$text-white;
+    height: $height-header;
+    
+    max-width: 1820px;
+    margin: 0 auto;
+    .header__wrp-logo{
+       
+        max-width: 273px;
+        width: 100%;
+        padding: 0 15px 0 30px;
+       img{
+           width: 100%;
+           max-width: 120px;    
+
+       }
+    }
+    .wapper{
+        height: 100%;
+        @include flex-box(space-between ,center);
+    }
+    .non-icon-after{
+        
+        .nav__item::after{
+            content: unset!important;
+        }
+    }
+    .nav,.header__list-icon{
+        flex: 1;
+        max-width: 966px;
+        height: 100%;
+        border-right: 1px solid #8080804d;
+        border-left: 1px solid #8080804d;
+        padding: 25px 30px;
+        .nav__list{
+            @include flex-box(center ,center);
+            font-size: $type_02;
+             font-weight: 600;
+             text-transform: uppercase;
+           
+        }
+        .nav__item{
+            padding: 15px 0;
+            position: relative;
+            min-width: 50px;
+            padding-right: 35px;
+            margin-right: 10px;
+            &:last-child{
+                margin: 0;
+                padding: 0;
+                &::after{
+                    content: unset;
+                }
+            }
+          &:hover{
+            .nav__link{
+                color: $text-hover;
+            }
+          }
+          .list__sub{
+            display: none;
+            z-index: 3;
+            position: absolute;
+            top: 100%;
+            background: $text-black;
+            min-width: 250px;
+            padding: 20px 0 20px 15px;
+            .sub__item {
+                padding: 10px 0;
+                &:hover{
+                   .nav__link{opacity: 1;}
+                }
+                .nav__link{
+                    color: $text-white;
+                    opacity: 0.6;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+            }
+          
+
+        }
+          &:hover{
+             .list__sub{display: block;}
+          }
+          &:hover::after{
+              border-color: $text-hover;
+              transition: 0.6s;
+          }
+          &:after{
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border: 2px solid;
+            border-color: black black transparent transparent;
+            transform: translateY(-50%) rotate(134deg);
+            right: 18px;
+            top: 46%;
+          }
+        }
+       .nav__link{
+           text-align: center;
+           font-weight: 700;
+       }
+      
+    }
+    .header__list-icon{
+        width: 100%;
+        max-width: 280px;
+        padding: 0 30px 0 15px;
+        border: unset;
+        display: flex;
+        .nav__list{
+            justify-content: flex-end;
+          width: 100%;
+        }
+       .nav__item{
+           &.nav__item--count{
+              position: relative;
+              &::before{
+                position: absolute;
+                content: "0";
+                top: -10px;
+                right: 5px;
+                font-size: 1.3rem;
+                color: $text-hover;
+                opacity: 0.8;
+              }
+           }
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+        min-width: unset;
+        position: relative;
+        font-size: $type_03;
+        &:hover{
+            .info-form{display: block;}
+        }
+       }
+     
+    }
+}

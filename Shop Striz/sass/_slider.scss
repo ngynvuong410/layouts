@@ -1,0 +1,55 @@
+.slider{
+    height: $height-slide;
+
+    .slide-item{
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+   
+    .captions{
+        @include flex-box(space-evenly,center);
+        flex-wrap: nowrap;
+        height: $height-slide;
+        overflow: hidden;
+    }
+    .captions-text{
+       color: $text-white;
+       font-family: $font-type_02;
+       text-transform: uppercase;
+       img{
+           max-width: 425px;
+           transform: translateY(-33%);
+       }
+    }
+    .captions-text__heading{
+         font-size: 2.4rem;
+         line-height: 2.4rem;
+         margin: 0;
+    }
+    .captions-text__title{
+        font-size: 7.9rem;
+        line-height: 7.9rem;
+        margin: 0;
+        padding-left: 5rem;
+        font-weight: 600;
+    }
+    .captions-thumb{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        .flower{
+            position: absolute;
+            max-width: 397px;
+            max-height: 551px;
+            top: 3%;
+        }
+        .person{
+            position: absolute;
+         max-width: 600px;
+         transform: translateX(-18%);
+           
+        }
+    }
+}

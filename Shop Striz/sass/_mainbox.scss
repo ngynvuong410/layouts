@@ -1,0 +1,90 @@
+.main-01{
+     padding: 90px 0;
+     display: flex;
+     overflow: hidden;
+      .main-big{
+          max-width: 860px;
+      }
+    .main-top{
+       display: flex;
+    }
+    .verhical{
+        width: 100%;
+        .overlay-pl{
+            padding-left: 50px;
+        }
+        .overlay-pr{
+            padding-right: 50px;
+            text-align: right;
+        }
+        .align-center{
+            justify-content: center;
+        }
+        .view{margin-top: 25px;}
+        .view-more{
+            padding: 10px 30px;
+            background-color: transparent;
+            border-color: $text-white;
+            color: $text-white;
+            text-transform: uppercase;
+        }
+    }
+    .overlay{
+        
+        position: relative;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        
+        &.overplay-text-bottom{
+            padding-top: 70%;
+        }
+        &.overplay-text-center{
+            text-align: center;
+        }
+        &.overplay--max-height{
+            height: 100%;
+        }
+        &.overlay--short{
+            &:first-child{
+                .overlay-heading,.overplay-title{color:$text-head;}
+            }
+            min-width: 426px;
+            min-height: 280px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+        .overplay-title{
+            margin: 0 0 10px;
+            font-weight: 600;
+            letter-spacing: 2.8px;
+            color: $text-white;
+        }
+        .overlay-heading{
+           font-size: $type_05;
+           color: $text-white;
+           font-weight: 700;
+           font-style: italic;
+           line-height: 40px;
+           margin: 0;
+           font-family: $font-type_02;
+        }
+        .box-thumb{
+             position: absolute;
+             top: 0;
+             left: 0;
+             z-index: -1;
+             img{
+                 object-fit: cover;
+                 object-position: center;
+             }
+        }
+       
+    }
+    .main-sub{
+        width: 100%;
+        .mr-t-20{
+               padding: 20px;
+        }
+    }
+}

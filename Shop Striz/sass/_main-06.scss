@@ -1,0 +1,28 @@
+.main-06{
+
+}
+.about{
+    text-align: center;
+    color: $text-white;
+    .quote{
+
+    }
+    .list-about{
+      font-family: $font-type_02;
+      font-size: $type-05;
+      position: relative;
+      min-height: 110px;
+     
+    }
+    .list-about__text {
+        position: absolute;
+        top: 0;
+    }
+    .list-about__controls{
+   
+    }
+    .list-about__img{
+       
+
+    }
+}

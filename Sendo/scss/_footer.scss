@@ -1,0 +1,40 @@
+.footer{
+   .flex-box {
+        border-radius: 3px;
+        height: 37px;
+    background: #fff;
+    }
+     .form-gruop {
+        width: 100%;
+        display: flex;
+        max-width: 439px;
+    }
+     .form-gruop {
+        input {
+            border: none;
+            padding-left: 0.6rem;
+            outline: none;
+        }
+     }
+     .list_extend__item{
+        .btn-search {
+            background: #e5101d;
+            flex: 1;
+            border-radius: 0 3px 3px 0;
+            display: flex;
+            align-items: center;
+        }
+     }
+      .list_extend__item.btn-search {
+        flex: 1;
+        background: #ed1015;
+        border-radius: 0 3px 3px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.info:last-child {
+    width: 100%;
+    max-width: 566px;
+}

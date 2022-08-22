@@ -1,0 +1,55 @@
+.products{
+
+}
+.product-head{
+    .product-head__text{
+         font-size: $type-06;
+         color: $text-black;
+         text-transform: uppercase;
+         text-align: center;
+         margin: 0;
+    }
+    .heading-decor{
+      width: 160px; 
+      margin: 0 auto;
+       svg{
+           fill: #e33d3d;
+       }
+    }
+}
+.product-main{
+    margin:  50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-item{
+     max-width: 300px;
+     padding: 0 5px;
+    .product-thumb{
+        position: relative;
+         img{
+             width: 100%;
+         }
+         .prodcut-thumb__box-text{
+             position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: $text-black;
+            h3{
+                color: $text-white;
+                text-transform: uppercase;
+            }
+         }
+    }
+    .prodcut-content{
+         .product-sale{
+             p{display: inline-block;}
+         }
+    }
+    .product-wapper{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    }
+}

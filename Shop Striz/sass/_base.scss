@@ -1,0 +1,115 @@
+$font-primary :'Barlow Condensed', sans-serif;
+$font-type_02:'Bai Jamjuree', sans-serif;
+$font-footer:'Rubik', sans-serif;
+//font sze  
+$type-01:1.4rem;
+$type-02:1.6rem;
+$type-03:1.8rem;
+$type-04:2rem;
+$type-05:3rem;
+$type-06:4rem;
+$type-07:6rem;
+// common color 
+$text-black :#000000;
+$text-white:#fff;
+$text-hover:#e33d3d;
+$text-head:#735c3d;
+$text-des:#666;
+//height
+$height-header:100px;
+$height-slide:530px;
+//mixin
+ @mixin flex-box($jucontent,$align) {
+     display: flex;
+     justify-content: $jucontent;
+     align-items: $align;
+     flex-wrap: wrap;
+ }
+html{font-size: 62.5%;}
+body{
+    font-family:$font-primary;
+    font-size: $type-01;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    
+}
+
+.grid-container{
+    max-width: 1200px;
+    width: 100%;
+    margin:  0 auto;
+}
+ul{list-style: none; margin: 0;padding: 0;}
+a{text-decoration: none;color: $text-black;}
+.info-form{
+    min-width: 320px;
+    background: #fff;
+    padding: 24px 21px;
+    font-family: "Rubik", sans-serif;
+    z-index: 3;
+    position: absolute;
+    right: 5px;
+    display: none;
+    box-shadow: $text-black 0px 2px 5px 0px;
+    border-radius: 2px;
+}
+   
+    .form-heading{
+         @include flex-box(space-between, center);
+         border-bottom: 1px solid #444;
+         padding-bottom: 4px;
+    margin-bottom: 14px;
+        .form-heading__title{
+         font-size: $type-03;
+         text-transform: initial;
+        }
+    }
+    .form-heading__direct{
+       color: $text-hover;
+       font-size: $type-01;
+       text-transform: initial;
+       font-weight: 400;
+    }
+    .form-gruop{
+        font-size: 1.3rem;
+        text-transform: initial;
+        color: $text-des;
+        font-weight: 400;
+        label{
+         display: block;
+         text-align: left;
+         
+         &::after{
+             content: '*';
+             color: $text-hover;
+             margin-left: 3px;
+         }
+        }
+        input{
+           margin: 5px 0;
+          height: 43px; 
+          width: 100%;
+           border: 1px solid $text-des;
+           border-radius: 2px;
+           padding-left: 15px;
+         
+        }
+       
+    }
+    .direct--left{
+        text-align: left;
+    }
+    .btn{
+        width: 100%;
+        height: 46px;
+        outline: none;
+        border: none;
+    }
+    .btn.btn--red{
+        background-color:$text-hover;
+        color: $text-white;
+        text-transform: uppercase;   
+        font-weight: 400;
+    }

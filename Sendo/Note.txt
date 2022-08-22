@@ -1,0 +1,8 @@
+Dear anh,
+
+ - Dưới đây là những điều em chưa hoàn thành được :
+   + xử lý phần chuyển slide  [JS]
+   + Hiệu ứng , kích thước
+
+Mong anh xem.
+./Chân thành cảm ơn.

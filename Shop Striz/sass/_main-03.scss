@@ -1,0 +1,57 @@
+.main-03{
+    
+    max-height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    color:$text-white;
+  
+    .headding{
+        font-size:  $type-06 + 2rem;
+        font-family: $font-type_02;
+        margin: 0;
+    }
+    .watch-video{
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 10rem;
+           margin-right: 2rem;
+          
+         
+        }
+    }
+   
+}
+.main-flex{
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+}
+.title{
+  font-size: $type-03;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.padding-xl{
+    padding: 90px 0;
+}
+.main-04{
+    .bike-item{
+        i{
+            font-size: 5rem;
+            color:$text-hover;
+            margin-right: 15px;
+        }
+    }
+    .title{
+        font-size: $type-04;
+    }
+}
+.text-white{
+    color: $text-white;
+}
+.des{
+  color: #999;
+  font-family: $font-footer;
+}

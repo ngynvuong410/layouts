@@ -1,0 +1,32 @@
+.main-05{
+    .box-img{
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .box-img__item{
+        width: 50%;
+        position: relative;
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+        ul.list-icons{
+            position: absolute;
+            top: 0;
+            @for $i from 1 through 3 {
+                li:nth-child(#{$i}) {
+                 transform: translateX($i * (25vh)) translateY(30vh) ;
+                
+                }
+              }
+              
+              
+            i{
+                color: $text-hover;
+                
+            }
+        }
+    }
+}
